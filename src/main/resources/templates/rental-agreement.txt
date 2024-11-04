@@ -1,0 +1,15 @@
+=================
+RENTAL AGREEMENT:
+=================
+Tool Code: [(${agreement.code})]
+Tool Type: [(${agreement.type})]
+Tool Brand: [(${agreement.brand})]
+Rental Days: [(${agreement.rentalDays})]
+CheckOut Date: [(${#temporals.format(agreement.checkoutDate, 'MM/dd/yy')})]
+Due Date: [(${#temporals.format(agreement.dueDate, 'MM/dd/yy')})]
+Daily Rental Charge: $[(${#numbers.formatDecimal(agreement.dailyRentalCharge, 1, 'COMMA', 2, 'POINT')})]
+Charge Days: [(${agreement.chargeDays})]
+Pre Discount Charge: $[(${#numbers.formatDecimal(agreement.preDiscountCharge, 1, 'COMMA', 2, 'POINT')})]
+Discount Percent: [(${agreement.discount})]%
+Discount Amount: $[(${#numbers.formatDecimal(agreement.discountAmount, 1, 'COMMA', 2, 'POINT')})]
+Final Charge: $[(${#numbers.formatDecimal(agreement.finalCharge, 1, 'COMMA', 2, 'POINT')})]
